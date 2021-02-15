@@ -1,0 +1,81 @@
+
+    body {
+        background-color: #FFF;
+    }
+
+    table{
+        width: 80%;
+        margin-left:
+        auto; margin-right: auto;
+    }
+
+    .arribaIzquierda{
+        border-top:2px solid black;
+        border-left:2px solid black;
+        width:100 px;
+        font-weight:bold;
+        background-color:#F9F4E3;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:10pt;
+        font-style:oblique;
+    }
+
+    .tituloAbajo{
+        border-bottom:2px solid black;
+        border-left:2px solid black;
+        width:100 px;
+        font-weight:bold;
+        background-color:#F9F4E3;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:10pt;
+        font-style:oblique;
+    }
+
+    .textoArriba{
+        border-top: 2px solid black;
+        width:100 px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:10pt;
+    }
+
+
+    .textoAbajo{
+        border-bottom: 2px solid black;
+        width:100 px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:10pt;
+    }
+
+    .abajoTitulo{
+    }
+
+    .titulo{
+        width:100 px;
+        font-weight:bold;
+        background-color:#F9F4E3;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:10pt;
+        font-style:oblique;
+        border-left: 2px solid black;
+    }
+
+    .texto{
+        width:100 px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:10pt;
+    }
+
+
+
+    table {
+        border-collapse :collapse;
+        color: #000;
+    }
+
+    .foto{
+        width:100px;
+        vertical-align: top;
+        text-align:center;
+        border:2px #000 solid;
+        width:150px;
+    }

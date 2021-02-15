@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Football Manager</string>
+    <string name="action_settings">Opciones</string>
+    <string name="contadorVeinte">20:00</string>
+    <string name="contadorDos">02:00</string>
+    <string name="cero">0</string>
+    <string name="uno">1</string>
+    <string name="cero_cero">00</string>
+    <string name="str_visitante_completo">VISITANTE</string>
+    <string name="str_local_completo">LOCAL</string>
+    <string name="guion">-</string>
+    <string name="mas">+</string>
+    <string name="reiniciar">REINICIAR</string>
+    <string name="reglamento">Reglamento</string>
+    <string name="pista">Introduce aquí tus notas…</string>
+    <string name="guardar">Guardar</string>
+    <string name="cargar">Cargar</string>
+    <string name="faltasTitulo">FALTAS</string>
+    <string name="expulsion">EXPULSIÓN</string>
+    <string name="play">Play</string>
+    <string name="grabar">Grabar</string>
+    <string name="parar">Parar</string>
+    <string name="parte">PARTE</string>
+    <string name="reiniciar_partido">REINICIAR PARTIDO</string>
+    <string name="grabando">Grabando</string>
+    <string name="refrescar">Refrescar</string>
+
+
+</resources>

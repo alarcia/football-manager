@@ -1,0 +1,39 @@
+body{
+	    background: #CFB677 !important;
+
+}
+img{
+	margin-left: 470px;
+}
+
+#indice{
+	margin-top: 50px;
+}
+
+#fifa{
+	width:200px;
+	margin-left: 520px;
+}
+
+h1{
+	text-align:center;
+}
+/*cambiar color de fondo en la pagina*/
+.ui-page {
+    background: #CFB677 !important;
+    font-weight:bold; 
+}
+.ui-content {
+    padding: 0 !important; 
+    position : absolute !important; 
+    top : 40px !important;  
+    right : 0 !important; 
+    bottom : 40px !important;  
+    left 
+    : 0 !important;    
+    font-weight:bold;   
+}
+/*fondo de las interior de la pestaña*/
+.ui-collapsible-content{
+	    background: #CFB677 !important;
+}

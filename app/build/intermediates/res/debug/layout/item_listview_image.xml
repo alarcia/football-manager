@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivPlayVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:background="@drawable/borde_negro"
+        android:src="@drawable/start_verde" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tvItemLista"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/ivPlayVerde"
+        android:background="@drawable/borde_negro"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+
+</RelativeLayout><!-- From: file:/C:/Android/projects/football-manager/app/src/main/res/layout/item_listview_image.xml -->

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/campo"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!--Fichas del drag and drop-->
+    <RelativeLayout
+        android:id="@+id/players"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_weight="1.07">
+
+
+        <!--Fichas ADAE-->
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fichadae"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="300dp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fichadae"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="160dp" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fichadae"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="450dp" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fichadae"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="120dp" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fichadae"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="485dp" />
+
+        <!--Fichas Rival-->
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fichariv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="300dp" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fichariv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="200dp"
+            android:layout_marginTop="160dp" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fichariv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="200dp"
+            android:layout_marginTop="450dp" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fichariv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="450dp"
+            android:layout_marginTop="120dp" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fichariv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="450dp"
+            android:layout_marginTop="485dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

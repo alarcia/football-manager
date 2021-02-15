@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutCompleta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/borde_rojo"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/layoutTiempos"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:id="@+id/layoutCuentaVeinte"
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/fondo_negro">
+
+
+            <com.damcotech.football_manager.TextoDigital
+                android:id="@+id/tvContadorVeinte"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/contadorVeinte"
+                android:textColor="@color/verde"
+                android:textIsSelectable="false"
+                android:textSize="200sp" />
+
+            <com.damcotech.football_manager.TextoDigital
+                android:id="@+id/tvMarcadorLoc"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvVisitante"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="-30dp"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:text="@string/cero_cero"
+                android:textColor="@color/verde"
+                android:textIsSelectable="false"
+                android:textSize="220sp" />
+
+            <com.damcotech.football_manager.TextoDigital
+                android:id="@+id/tvMarcadorVis"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tvMarcadorLoc"
+                android:layout_marginRight="150dp"
+                android:gravity="center_horizontal"
+                android:text="@string/cero_cero"
+                android:textColor="@color/verde"
+                android:textSize="220sp" />
+
+            <TextView
+                android:id="@+id/tvLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/str_local_completo"
+                android:textColor="@color/blanco"
+                android:textSize="70sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/tvVisitante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/tvMarcadorVis"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tvLocal"
+                android:layout_marginRight="80dp"
+                android:text="@string/str_visitante_completo"
+                android:textColor="@color/blanco"
+                android:textSize="70sp"
+                android:textStyle="italic|bold" />
+
+
+            <Button
+                android:id="@+id/btnMasVis"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="false"
+                android:layout_marginEnd="-30dp"
+                android:layout_marginTop="110dp"
+                android:layout_toLeftOf="@id/tvVisitante"
+                android:background="@drawable/borde_blanco"
+                android:text="@string/mas"
+                android:textColor="@color/blanco"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnStartStopVeinte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="110dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/btnMasVis"
+                android:layout_toRightOf="@id/btnMasVis"
+                android:background="@drawable/start_blanco"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnRestartVeinte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/btnStartStopVeinte"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/restartdisabled"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/tvParte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/tvVisitante"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="@string/parte"
+                android:textColor="@color/blanco"
+                android:textIsSelectable="false"
+                android:textSize="50sp"
+                android:textStyle="bold|italic" />
+
+            <com.damcotech.football_manager.TextoDigital
+                android:id="@+id/partePartido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:text="@string/uno"
+                android:textColor="@color/morado"
+                android:textSize="160sp" />
+
+            <Button
+                android:id="@+id/btnMenosLoc"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignLeft="@+id/btnMasLoc"
+                android:layout_alignStart="@+id/btnMasLoc"
+                android:layout_below="@+id/btnMasLoc"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/borde_blanco"
+                android:text="@string/guion"
+                android:textColor="@color/blanco"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnMasLoc"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="110dp"
+                android:layout_toRightOf="@id/tvLocal"
+                android:background="@drawable/borde_blanco"
+                android:text="@string/mas"
+                android:textColor="@color/blanco"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnMenosVis"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignStart="@id/btnMasVis"
+                android:layout_alignTop="@id/btnMenosLoc"
+                android:layout_below="@id/btnMasVis"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/borde_blanco"
+                android:text="@string/guion"
+                android:textColor="@color/blanco"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnReiniciarPartido"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/borde_blanco"
+                android:text="@string/reiniciar_partido"
+                android:textColor="@color/blanco"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAbajo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/layoutExpulsion"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/borde_blanco">
+
+                <TextView
+                    android:id="@+id/tvExpulsionTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/expulsion"
+                    android:textColor="@color/blanco"
+                    android:textSize="50sp"
+                    android:textStyle="italic|bold" />
+
+                <Button
+                    android:id="@+id/btnStartStopDos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/tvExpulsionTitulo"
+                    android:background="@drawable/start_blanco"
+                    android:textSize="20sp" />
+
+                <com.damcotech.football_manager.TextoDigital
+                    android:id="@+id/tvContadorDos"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="70dp"
+                    android:text="@string/contadorDos"
+                    android:textColor="@color/verde"
+                    android:textSize="100sp" />
+
+                <Button
+                    android:id="@+id/btnRestartDos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnStartStopDos"
+                    android:layout_toEndOf="@id/tvExpulsionTitulo"
+                    android:background="@drawable/restartdisabled"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutFaltas"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/borde_blanco">
+
+
+                <TextView
+                    android:id="@+id/tvFaltasTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/faltasTitulo"
+                    android:textColor="@color/blanco"
+                    android:textSize="50sp"
+                    android:textStyle="italic|bold" />
+
+                <com.damcotech.football_manager.TextoDigital
+                    android:id="@+id/tvFaltasCifra"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/cero"
+                    android:textColor="@color/verde"
+                    android:textSize="120sp" />
+
+
+                <Button
+                    android:id="@+id/btnMasFalta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignLeft="@+id/btnReiniciarFaltas"
+                    android:layout_alignStart="@+id/btnReiniciarFaltas"
+                    android:layout_alignRight="@id/btnReiniciarFaltas"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/borde_blanco"
+                    android:text="@string/mas"
+                    android:textColor="@color/blanco"
+                    android:textSize="46dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnReiniciarFaltas"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/btnMasFalta"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/tvFaltasTitulo"
+                    android:background="@drawable/borde_gris"
+                    android:text="@string/reiniciar"
+                    android:textColor="@color/gris"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

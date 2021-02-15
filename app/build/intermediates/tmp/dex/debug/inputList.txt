@@ -1,0 +1,5 @@
+C:\Android\projects\football-manager\app\build\intermediates\classes\debug
+C:\Android\projects\football-manager\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.0-f790daaebc873255760ef63181bf3c1152cb82f8.jar
+C:\Android\projects\football-manager\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.0-b20bf6575acd5b2cec38a379b4648386964f80a3.jar
+C:\Android\projects\football-manager\app\build\intermediates\pre-dexed\debug\classes-531ce592aa3872a2ca37856cb0b740d6cbcb1807.jar
+C:\Android\projects\football-manager\app\build\intermediates\pre-dexed\debug\classes-385b842167c5edc57bf8c0bf2b53f54eb47cc0f8.jar
